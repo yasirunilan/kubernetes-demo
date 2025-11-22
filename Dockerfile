@@ -9,6 +9,10 @@ RUN npm install
 
 COPY . .
 
+# Set a dummy value for building (not used for connection during build)
+ARG DATABASE_URL="postgresql://dummy:dummy@localhost:5432/dummy"
+ENV DATABASE_URL=$DATABASE_URL
+
 RUN npx prisma generate
 RUN npm run build
 
