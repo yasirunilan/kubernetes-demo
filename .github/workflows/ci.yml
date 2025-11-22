@@ -48,5 +48,5 @@ jobs:
         context: .
         push: true
         tags: |
-          ${{ secrets.DOCKER_USERNAME }}/online-store:latest
-          ${{ secrets.DOCKER_USERNAME }}/online-store:${{ github.sha }}
+          ${{ secrets.DOCKER_USERNAME }}/nestjs-kubernetes-demo:latest
+          ${{ secrets.DOCKER_USERNAME }}/nestjs-kubernetes-demo:${{ github.sha }}
