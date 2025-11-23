@@ -28,8 +28,8 @@ spec:
     spec:
       containers:
         - name: online-store
-          image: online-store:latest
-          imagePullPolicy: Never
+          image: yasi92/nestjs-kubernetes-demo:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
           env:
